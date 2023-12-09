@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+}
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #1f4037;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .container {
+        height:40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 1rem;
+        }
+        .sam {
+              width:80%;    
+              height: 5vh;
+              border-radius: 10px;
+              margin: 5px;
+              outline: none;
+              border: none;
+              padding-left: 15px;
+              background-color:#d8f0e5;
+              border-bottom: 5px transparent;
+        } 
+        form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:80vh;
+        width:25vw;
+        gap:0.3rem;
+    }
+    .saam {
+        background-color: rgb(55, 147, 55);
+        width:40%;
+        cursor: pointer;
+    }
+    .saam:hover {
+        background-color: rgb(90, 158, 90);
+    }
+    .shadow {
+        box-shadow:
+        2.8px 2.8px 3.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    }
+
+    input:focus{
+        border-bottom: 2px solid green;  
+     }
+     a {
+        font-size: 20px;
+        text-decoration: none;
+        color: green;
+     }
+    </style>
+</head>
+<body>
+    <div class="container shadow" style="background-color: white;">
+        <h2>Login</h2>
+        <form onsubmit="check()">
+            <input type="text" name="" id="uname" placeholder="username" class="sam">
+            <input type="email" name="" id="email" placeholder="email"  class="sam">
+            <input type="password" name="" id="pass"  placeholder="password" class="sam">
+            <input type="submit" value="submit" class="saam sam">
+            <!-- <h3>or</h3> -->
+            <a href="/index.html">register</a>
+        </form>
+    </div>
+</body>
+<script>
+    function check()
+    {
+        let name = document.getElementById("uname").value;
+        let email = document.getElementById("email").value;
+        let pass = document.getElementById("pass").value;
+        let pwd = "123";
+
+        if(pass === pwd)
+        {
+            alert("logged in !");
+        }
+        else
+        {
+            alert("failed");
+        }
+    }
+</script>
+</html>
