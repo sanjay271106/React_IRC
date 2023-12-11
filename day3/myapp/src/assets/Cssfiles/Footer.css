@@ -1,0 +1,14 @@
+.first {
+    background-color:black ;
+    height:15vh;
+    /* justify-items: baseline; */
+    margin-top: 77.2vh;
+    font-size: 70px;
+    color:white;
+}
+
+.first h6 {
+    padding-left: 700px;
+    padding-top: 30px;
+
+}
