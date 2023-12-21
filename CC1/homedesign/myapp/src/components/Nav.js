@@ -1,5 +1,12 @@
-import {FaUser } from "react-icons/fa"
+// import {FaUser } from "react-icons/fa"
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import {useNavigate} from 'react-router-dom'
 const Nav =()=> {
+   const navigate = useNavigate();
+   const handleLogin =()=> {
+    navigate('/Login')
+  };
     return (
         <>
         <nav>
@@ -20,12 +27,11 @@ const Nav =()=> {
                  </ul>
               </div>
               <div className="right">
-                    {/* <button type="button"><a href="">Login</a></button> */}
-                    <button class="button button1">
-                     {/* <link to="/Login"> */}
+                    <Button variant="contained"  onClick={handleLogin}>
                         Login
-                     {/* </link> */}
-                    </button>
+                    </Button> 
+                   
+                   
 
               </div>
            </div>

@@ -1,5 +1,5 @@
  .body1 {
-    height: 1000px;
+    height: 200vh;
     /* margin-top:100px; */
  }  
  .image1 {
@@ -8,4 +8,11 @@
     border-radius:10px;
     margin-left: 110px;
     margin-top:40px
+ }
+
+ .why-homelane {
+   margin-top: 60px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
  }

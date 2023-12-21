@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "username": "akash",
+      "email": "sanjay@gmail",
+      "password": "2710"
+    },
+    {
+      "id": 3,
+      "username": "akash",
+      "email": "sanjay@gmail.co",
+      "password": "2710"
+    },
+    {
+      "username": "sam",
+      "email": "22cse.sanjay.r@skct.edu.in",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "username": "jdjdjjd",
+      "email": "ioashah@y",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "username": "ghjk",
+      "email": "ffghj@ee",
+      "password": "aaa",
+      "id": 6
+    }
+  ]
+}

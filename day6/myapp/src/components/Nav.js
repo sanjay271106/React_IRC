@@ -38,7 +38,6 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
   const handleAbout =()=> {
     navigate('/about')
   };

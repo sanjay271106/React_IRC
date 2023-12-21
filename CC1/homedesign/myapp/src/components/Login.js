@@ -1,43 +1,46 @@
-import { FaFacebook, FaGooglePlus, FaGooglePlusG, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {  FaBackward, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import img1 from '../assets/images/signin.jpg';
+import {useNavigate} from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-
+import {X} from 'lucide-react'
 const Login =()=> {
-   
-    const signUpButton = document.getElementById('signUp');
-    const signInButton = document.getElementById('signIn');
-    const container = document.getElementById('container');
-    
-    // signUpButton.addEventListener('click', () => {
-    //     container.classList.add("right-panel-active");
-    // });
-    
-    // signInButton.addEventListener('click', () => {
-    //     container.classList.remove("right-panel-active");
-    // });
+    const navigate = useNavigate();
+    const handleRegister =()=> {
+     navigate('/Register')
+   };
+    const handleHome =()=> {
+     navigate('/')
+   };
+    const handle =()=> {
+        toast.success('Login successful!', {
+            position: 'bottom-right',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "colored",
+            onClose: () => {},
+          });   
+    const handleDash =()=>{
+        navigate('/Dash')
+    }
+    setTimeout(() => {
+     handleDash();
+     }, 3000);
+   };
 
     return(
         <>
-        
+        <div className="mainbody">
+            <i className="ic" onClick={handleHome}><X size={40}/></i>
         <div className="body">
-        {/* <h2>Weekly Coding Challenge #1: Sign in/up Form</h2> */}
         <div class="container" id="container">
-            <div class="form-container sign-up-container">
-                <form action="#">
-                    <h1>Create Account</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><FaGooglePlusG/></a>
-                        <a href="#" class="social"><FaFacebook/></a>
-                        <a href="#" class="social"><FaLinkedin/></a>
-                    </div>
-                    <span>or use your email for registration</span>
-                    <input type="text"  placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <button>Sign Up</button>
-                </form>
-            </div>
+           
             <div class="form-container sign-in-container">
-                <form action="#">
+                <form action="#" >
                     <h1>Sign in</h1>
                     <div class="social-container">
                         <a href="#" class="social"><FaInstagram/></a>
@@ -45,28 +48,25 @@ const Login =()=> {
                         <a href="#" class="social"><FaLinkedin/></a>
                     </div>
                     <span>or use your account</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="email" placeholder="Email" required/>
+                    <input type="password" placeholder="Password" required/>
                     <a href="#">Forgot your password?</a>
-                    <button>Sign In</button>
+                    <button onClick={handle}>Sign In</button>
+                    <h6>or</h6>
+                    <div className="sign">
+                    <h6>Don't have an account? <a className='sign' href='#' onClick={handleRegister}>signup</a></h6>
+                    </div>
                 </form>
+                <ToastContainer />
             </div>
             <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <h1>Welcome Again! </h1>
-                        <p>Connect with us !</p>
-                        <button class="ghost" id="signIn">Sign In</button>
-                    </div>
-                    <div class="overlay-panel overlay-right">
-                        <h1>Hello, Friend!</h1>
-                        <p>Let's Join</p>
-                        <button class="ghost" id="signUp">Sign Up</button>
-                    </div>
+                <div class="images">
+                    <img src={img1} alt="img1"/>
                 </div>
             </div>
         </div>
         
+        </div>
         </div>
         </>
     )

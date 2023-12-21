@@ -1,4 +1,5 @@
-
+import {Instagram, Linkedin, Twitter, Youtube} from 'lucide-react'
+import {Facebook} from 'lucide-react'
 const Footer =()=> {
   return (
     <>
@@ -10,11 +11,11 @@ const Footer =()=> {
           <span class="logo_name">Homies designing</span>
         </div>
         <div class="media-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i><Facebook /> </i></a>
+          <a href="#"><i><Twitter/></i></a>
+          <a href="#"><i><Instagram/> </i></a>
+          <a href="#"><i><Linkedin/></i></a>
+          <a href="#"><i><Youtube/></i></a>
         </div>
       </div>
       <div class="link-boxes">
