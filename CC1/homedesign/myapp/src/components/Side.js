@@ -15,13 +15,6 @@ const Sidebar = ({ show, onHide }) => {
         <Offcanvas.Title>My HomeStyle</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
-    {/* Add your sidebar content here */}
-    {/* <Stack spacing={0} direction="column">
-      <Button variant="Outlined" className='sidebutton' sx={{backgroundColor:'white',height:50,fontSize:18,fontWeight:700}} >Home</Button>
-      <Button variant="Contained" sx={{backgroundColor:'white',height:50,fontSize:18,fontWeight:700}} >About</Button>
-      <Button variant="Contained" sx={{backgroundColor:'white',height:50,fontSize:18,fontWeight:700}} >Contact</Button>
-      <Button variant="Contained" sx={{backgroundColor:'white',height:50,fontSize:18,fontWeight:700}} >Reviews</Button>
-    </Stack> */}
 
     <div className='sidepanel'>
       <button>Home</button>

@@ -28,16 +28,17 @@ const Admin =()=> {
             theme: "colored",
             onClose: () => {},
           });   
+          const handleAdm=()=>{
+            navigate('/Admindash')
+      }
+      setTimeout(() => {
+          handleAdm();
+      }, 3000);
     }
     else {
         alert('invalid username or password')
     }
-    const handleAdm=()=>{
-          navigate('/Admindash')
-    }
-    setTimeout(() => {
-        handleAdm();
-    }, 3000);
+   
     }
     return (
     <>

@@ -30,29 +30,28 @@ const Register =()=> {
         e.preventDefault();
         try{
             await addUser(data)
+                toast.success('Register successful!', {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    theme: "colored",
+                    onClose: () => {},
+                  });   
+                  const handleHome =()=> {
+                    navigate('/')
+                   };
+                  setTimeout(() => {
+                  handleHome();
+                  }, 3000);
         }
         catch(e){
           console.log(e);
         }
     }
-    const handle =()=> {
-        toast.success('Register successful!', {
-            position: 'bottom-right',
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            theme: "colored",
-            onClose: () => {},
-          });   
-          const handleHome =()=> {
-            navigate('/')
-           };
-          setTimeout(() => {
-          handleHome();
-          }, 3000);
-   };
+   
 
     return(
         <>
@@ -77,7 +76,7 @@ const Register =()=> {
                     <input type="text"  id='username' placeholder='username' onChange={handleChange} required/>
                     <input type="email"  id='email' placeholder='email' onChange={handleChange} required/>
                     <input type="password" id='password' placeholder='password' onChange={handleChange} /><br/>
-                    <button onClick={handle}>Sign Up</button>
+                    <button >Sign Up</button>
                 </form>
                 <ToastContainer/>
             </div>

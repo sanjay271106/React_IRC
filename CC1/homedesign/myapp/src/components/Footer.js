@@ -8,7 +8,7 @@ const Footer =()=> {
       <div class="top">
         <div class="logo-details">
           <i class="fab fa-slack"></i>
-          <span class="logo_name">Homies designing</span>
+          <span class="logo_name">HomeStyle designing</span>
         </div>
         <div class="media-icons">
           <a href="#"><i><Facebook /> </i></a>
@@ -56,7 +56,7 @@ const Footer =()=> {
     </div>
     <div class="bottom-details">
       <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2021 <a href="#">Homies</a>All rights reserved</span>
+        <span class="copyright_text">Copyright © 2021 <a href="#">HomeStyle</a>All rights reserved</span>
         <span class="policy_terms">
           <a href="#">Privacy policy</a>
           <a href="#">Terms & condition</a>

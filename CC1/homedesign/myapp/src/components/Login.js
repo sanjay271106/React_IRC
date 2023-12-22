@@ -40,7 +40,7 @@ const Login =()=> {
         <div class="container" id="container">
            
             <div class="form-container sign-in-container">
-                <form action="#" >
+                <form action="#" onSubmit={handle}>
                     <h1>Sign in</h1>
                     <div class="social-container">
                         <a href="#" class="social"><FaInstagram/></a>
@@ -48,10 +48,10 @@ const Login =()=> {
                         <a href="#" class="social"><FaLinkedin/></a>
                     </div>
                     <span>or use your account</span>
-                    <input type="email" placeholder="Email" required/>
+                    <input type="text" placeholder="Username" required/>
                     <input type="password" placeholder="Password" required/>
                     <a href="#">Forgot your password?</a>
-                    <button onClick={handle}>Sign In</button>
+                    <button>Sign In</button>
                     <h6>or</h6>
                     <div className="sign">
                     <h6>Don't have an account? <a className='sign' href='#' onClick={handleRegister}>signup</a></h6>
